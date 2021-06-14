@@ -28,7 +28,7 @@ var studenti = [
     {
         nome: 'Giulia',
         cognome: 'Tosca',
-        eta: 25
+        eta: 25,
     },
     {
         nome: 'Pippo',
@@ -36,6 +36,13 @@ var studenti = [
         eta: 22
     }
 ];
+
+
+//Creazione di un metodo di oggetto per provarlo lanciare in console studenti[0].messaggio();
+studenti[0].messaggio = function(){
+    alert('Benvenuta a bordo ' + this.nome);
+};
+
 
 /*
 //Stampiamo a schermo l'array di oggetti con ciclo for e ciclo for in annidato (Tutte le proprietà)
